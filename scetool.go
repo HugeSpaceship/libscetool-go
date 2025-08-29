@@ -1,11 +1,12 @@
-package main
+package libscetool_go
 
 // This shit is not thread safe, actually safe, or safe for human habitation, please deal with it as I'm not rewriting SCETool
 
 import "C"
 import (
-	_ "github.com/HugeSpaceship/libscetool-go/scetool"
 	"unsafe"
+
+	_ "github.com/HugeSpaceship/libscetool-go/scetool"
 )
 
 // #cgo LDFLAGS: -lz
