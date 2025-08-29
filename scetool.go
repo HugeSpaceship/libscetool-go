@@ -1,4 +1,4 @@
-package libscetool_go
+package scetool
 
 // This shit is not thread safe, actually safe, or safe for human habitation, please deal with it as I'm not rewriting SCETool
 
@@ -17,7 +17,7 @@ import (
 // #include "scetool/keys.h"
 import "C"
 
-func scetoolInit() {
+func init() {
 	ret, err := C.libscetool_init()
 	if err != nil {
 		panic(err)
