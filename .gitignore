@@ -1,0 +1,4 @@
+zig-out/
+scetool/zig-cache/
+*.o
+build/
